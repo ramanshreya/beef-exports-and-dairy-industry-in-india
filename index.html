@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Why does India have high beef exports?</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="section">
+            <div class="container content">
+                <h1 class="title">Why does India have high beef exports?</h1>
+                <p>A story by Shreya Raman</p>
+                <p>
+                    The genesis of this story and the reason for this open ended headline is a conversation I had with a friend a couple of months ago. The person, who had recently become vegan, was explaining to me how important taking the step was. While I listened intently and agreed to all that they said, they said one sentence that stuck with me and made me do this story. They said, “Do you know why a vegetarian country like India has such high beef exports? It is because we consume so much dairy and dairy products.”
+
+                </p>
+                <p>
+
+                    The sentence intrigued me because it was one of those proclamations that seem factually accurate but in reality is somewhat misleading. As a data journalist, I thought the best way to tackle this proclamation would be to look at the data. So I spent hours and hours looking for data, analysing it and visualising it to check the veracity of this proclamation. It also worked for me because, for the second data project for the Lede Program, I wanted to work with the kind of data that I generally work with and check if the skills that I am learning can be implemented in the messy Indian data landscape.
+
+                </p>
+                <p>
+
+                    Now, this story is quite complicated and is a little bit of a rollercoaster ride. And I understand that unless you care a lot about the socio-economic and political aspects of the dairy industry, you would not read this. So, I will just summarise what I found. There are a couple of claims that we are tackling. The first one and the one that I knew was false at face value was that India is a vegetarian country. A lot has been written about it and I am just quoting that in this story. The second claim is that of a direct correlation between beef exports and demand for dairy in India. Now this is a tricky one. While the beef that India exports is a <a href="https://www.fas.usda.gov/data/india-livestock-and-products-semi-annual-5">byproduct</a> of the dairy industry and that linkage is strong, there are socio-economic and political factors that cannot be ignored while speaking of beef and cattle in India.
+
+                </p>
+                <p>
+
+                    Before we delve deeper, some caveats. This story is a project that is part of a 10-week course on data analysis and storytelling. So naturally, beyond the data and research, I have not done any reporting. Also, it has not undergone fact checking or any kinds of editorial checks that my other published works have been through. So, everything that I am saying here is what I understand to be true and I am open to being challenged and corrected, if need be. Another thing that I want to highlight is that India only exports buffalo meat. So when I say beef, I mean carabeef.
+
+                </p>
+                <p>
+
+                    Now let's get into the data. I thought the best way to start this would be to look at the data on beef exports and milk production in India and if there is any correlation there. So, I exported <a href="https://agriexchange.apeda.gov.in/indexp/genReport_combined.aspx#content">data</a> on beef exports from 1998 and plotted that on a simple line chart. As you can see, while the quantity of beef exports have been steadily increasing since 1998, there was a huge jump between 2009-10 and 2013-14.
+                </p>
+<div>
+                <script type="text/javascript">
+                    (function() {
+                        // only want one resizer on the page
+                        if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+                        document.documentElement.className += " g-resizer-v3-init";
+                        // require IE9+
+                        if (!("querySelector" in document)) return;
+                        function resizer() {
+                            var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                                widthById = {};
+                            elements.forEach(function(el) {
+                                var parent = el.parentNode,
+                                    width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                                    minwidth = el.getAttribute("data-min-width"),
+                                    maxwidth = el.getAttribute("data-max-width");
+                                widthById[parent.id] = width;
+                
+                                if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                    el.style.display = "block";
+                                } else {
+                                    el.style.display = "none";
+                                }
+                            });
+                            try {
+                                if (window.parent && window.parent.$) {
+                                    window.parent.$("body").trigger("resizedcontent", [window]);
+                                }
+                                if (window.require) {
+                                    require(['foundation/main'], function() {
+                                        require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                                            AppCommunicator.triggerResize();
+                                        });
+                                    });
+                                }
+                            } catch(e) { console.log(e); }
+                        }
+                
+                        document.addEventListener('DOMContentLoaded', resizer);
+                        // feel free to replace throttle with _.throttle, if available
+                        window.addEventListener('resize', throttle(resizer, 200));        
+                
+                        function throttle(func, wait) {
+                            // from underscore.js
+                            var _now = Date.now || function() { return new Date().getTime(); },
+                                context, args, result, timeout = null, previous = 0;
+                            var later = function() {
+                                previous = _now();
+                                timeout = null;
+                                result = func.apply(context, args);
+                                if (!timeout) context = args = null;
+                            };
+                            return function() {
+                                var now = _now(), remaining = wait - (now - previous);
+                                context = this;
+                                args = arguments;
+                                if (remaining <= 0 || remaining > wait) {
+                                    if (timeout) {
+                                        clearTimeout(timeout);
+                                        timeout = null;
+                                    }
+                                    previous = now;
+                                    result = func.apply(context, args);
+                                    if (!timeout) context = args = null;
+                                } else if (!timeout && options.trailing !== false) {
+                                    timeout = setTimeout(later, remaining);
+                                }
+                                return result;
+                            };
+                        }
+                
+                       
+                    })();
+                </script>
+
+
+
+<!-- Generated by ai2html v0.111.0 - 2022-07-10 18:20 -->
+<!-- ai file: Beef_Exports.ai -->
+<style media="screen,print">
+	#g-Beef_Exports-box ,
+	#g-Beef_Exports-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-Beef_Exports-box p {
+		margin:0;
+	}
+	#g-Beef_Exports-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-Beef_Exports-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-Beef_Exports-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-Beef_Exports-box .g-aiPointText p { white-space: nowrap; }
+	#g-Beef_Exports-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-Beef_Exports-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:13px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:11px;
+		text-align:left;
+		color:rgb(136,136,136);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-Beef_Exports-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+		color:rgb(0,0,0);
+	}
+	#g-Beef_Exports-Artboard_1 .g-pstyle1 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(162,162,162);
+	}
+	#g-Beef_Exports-Artboard_1 .g-pstyle2 {
+		line-height:17px;
+		height:17px;
+		font-size:14px;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-Beef_Exports-Artboard_1 .g-pstyle3 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(116,116,116);
+	}
+	#g-Beef_Exports-Artboard_1 .g-pstyle4 {
+		height:13px;
+	}
+	#g-Beef_Exports-Artboard_1 .g-cstyle0 {
+		font-weight:bold;
+		color:rgb(120,147,138);
+	}
+	#g-Beef_Exports-Artboard_5 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-Beef_Exports-Artboard_5 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:13px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:11px;
+		text-align:left;
+		color:rgb(136,136,136);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-Beef_Exports-Artboard_5 .g-pstyle0 {
+		font-weight:bold;
+		line-height:24px;
+		height:24px;
+		font-size:20px;
+		color:rgb(0,0,0);
+	}
+	#g-Beef_Exports-Artboard_5 .g-pstyle1 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+		color:rgb(162,162,162);
+	}
+	#g-Beef_Exports-Artboard_5 .g-pstyle2 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-Beef_Exports-Artboard_5 .g-pstyle3 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+		color:rgb(116,116,116);
+	}
+	#g-Beef_Exports-Artboard_5 .g-pstyle4 {
+		height:13px;
+	}
+	#g-Beef_Exports-Artboard_5 .g-cstyle0 {
+		font-weight:bold;
+		color:rgb(120,147,138);
+	}
+
+</style>
+
+<div id="g-Beef_Exports-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-Beef_Exports-Artboard_1" class="g-artboard" style="min-width: 600px;" data-aspect-ratio="1.306" data-min-width="600">
+<div style="padding: 0 0 76.5648% 0;"></div>
+		<img id="g-Beef_Exports-Artboard_1-img" class="g-Beef_Exports-Artboard_1-img g-aiImg" alt="" src="charts/Beef_Exports-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:3.6087%;margin-top:-15.6px;left:0%;width:430px;">
+			<p class="g-pstyle0">Sharp Increase In Beef Exports In India</p>
+		</div>
+		<div id="g-ai0-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:9.5991%;margin-top:-8.1px;left:-0.216%;width:129px;">
+			<p class="g-pstyle1">1.6 Billion kilograms</p>
+		</div>
+		<div id="g-ai0-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:28.755%;margin-top:-8.1px;left:0%;width:47px;">
+			<p class="g-pstyle1">1.2B</p>
+		</div>
+		<div id="g-ai0-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:38.8733%;margin-top:-26.6px;left:37.12%;margin-left:-75px;width:150px;">
+			<p class="g-pstyle2">Buffalo meat exports</p>
+			<p class="g-pstyle2">increased by <span class="g-cstyle0">193% </span></p>
+			<p class="g-pstyle2">over 4 years</p>
+		</div>
+		<div id="g-ai0-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:48.1286%;margin-top:-8.1px;left:0%;width:52px;">
+			<p class="g-pstyle1">800M</p>
+		</div>
+		<div id="g-ai0-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:67.5021%;margin-top:-8.1px;left:0%;width:52px;">
+			<p class="g-pstyle1">400M</p>
+		</div>
+		<div id="g-ai0-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:4.1139%;width:66px;">
+			<p class="g-pstyle3">1998-99</p>
+		</div>
+		<div id="g-ai0-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:15.8813%;width:66px;">
+			<p class="g-pstyle3">2001-02</p>
+		</div>
+		<div id="g-ai0-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:27.6486%;width:66px;">
+			<p class="g-pstyle3">2004-05</p>
+		</div>
+		<div id="g-ai0-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:39.4159%;width:66px;">
+			<p class="g-pstyle3">2007-08</p>
+		</div>
+		<div id="g-ai0-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:51.2575%;width:65px;">
+			<p class="g-pstyle3">2010-11</p>
+		</div>
+		<div id="g-ai0-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:62.9505%;width:66px;">
+			<p class="g-pstyle3">2013-14</p>
+		</div>
+		<div id="g-ai0-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:74.7179%;width:66px;">
+			<p class="g-pstyle3">2016-17</p>
+		</div>
+		<div id="g-ai0-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.2293%;margin-top:-8.1px;left:86.4852%;width:66px;">
+			<p class="g-pstyle3">2019-20</p>
+		</div>
+		<div id="g-ai0-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.1072%;margin-top:-7.5px;left:0.0824%;width:417px;">
+			<p class="g-pstyle4">Source: Agricultural and Processed Food Products Export Development Authority</p>
+		</div>
+		<div id="g-ai0-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.978%;margin-top:-7.5px;left:66.0986%;width:25px;">
+			<p class="g-pstyle4">​ ​</p>
+		</div>
+		<div id="g-ai0-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.978%;margin-top:-7.5px;left:67.2498%;width:25px;">
+			<p class="g-pstyle4">​ ​</p>
+		</div>
+		<div id="g-ai0-18" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.978%;margin-top:-7.5px;left:78.0511%;width:25px;">
+			<p class="g-pstyle4">​ ​</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_5 -->
+	<div id="g-Beef_Exports-Artboard_5" class="g-artboard" style="max-width: 599px;max-height: 861px" data-aspect-ratio="0.696" data-min-width="0" data-max-width="599">
+<div style="padding: 0 0 143.7658% 0;"></div>
+		<img id="g-Beef_Exports-Artboard_5-img" class="g-Beef_Exports-Artboard_5-img g-aiImg" alt="" src="charts/Beef_Exports-Artboard_5.png"/>
+		<div id="g-ai1-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:7.7053%;margin-top:-26.3px;left:0.3323%;width:323px;">
+			<p class="g-pstyle0">Sharp Increase In Beef Exports </p>
+			<p class="g-pstyle0">In India</p>
+		</div>
+		<div id="g-ai1-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:16.3875%;margin-top:-6.9px;left:-0.0001%;width:111px;">
+			<p class="g-pstyle1">1.6 Billion kilograms</p>
+		</div>
+		<div id="g-ai1-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:35.7025%;margin-top:-22.5px;left:29.3997%;margin-left:-66px;width:132px;">
+			<p class="g-pstyle2">Buffalo meat exports</p>
+			<p class="g-pstyle2">increased by <span class="g-cstyle0">193% </span></p>
+			<p class="g-pstyle2">over 4 years</p>
+		</div>
+		<div id="g-ai1-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:32.5636%;margin-top:-6.9px;left:-0.3706%;width:43px;">
+			<p class="g-pstyle1">1.2B</p>
+		</div>
+		<div id="g-ai1-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:49.202%;margin-top:-6.9px;left:-0.0001%;width:47px;">
+			<p class="g-pstyle1">800M</p>
+		</div>
+		<div id="g-ai1-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:65.6093%;margin-top:-6.9px;left:-0.0001%;width:47px;">
+			<p class="g-pstyle1">400M</p>
+		</div>
+		<div id="g-ai1-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:86.176%;margin-top:-6.9px;left:29.3176%;width:59px;">
+			<p class="g-pstyle3">2004-05</p>
+		</div>
+		<div id="g-ai1-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:86.176%;margin-top:-6.9px;left:51.2276%;width:58px;">
+			<p class="g-pstyle3">2010-11</p>
+		</div>
+		<div id="g-ai1-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:86.176%;margin-top:-6.9px;left:72.9994%;width:59px;">
+			<p class="g-pstyle3">2016-17</p>
+		</div>
+		<div id="g-ai1-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:86.1306%;margin-top:-6.7px;left:7.477%;width:57px;">
+			<p class="g-pstyle3">1998-99</p>
+		</div>
+		<div id="g-ai1-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:95.2327%;margin-top:-14.1px;left:-0.1681%;width:271px;">
+			<p class="g-pstyle4">Source: Agricultural and Processed Food Products </p>
+			<p class="g-pstyle4">Export Development Authority</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2022-07-10 18:20 -->
+
+
+</div>
+
+
+                <p>
+
+                    Comparing this with <a href="https://dahd.nic.in/sites/default/filess/Book%20BAHS%202020-Final.pdf">data</a> on milk production, the latter has been steadily increasing since 1950. In the four-year period where beef exports boomed, the increase in milk production was relatively more steady.
+
+                </p>
+
+                <div>
+                  
+<!-- Generated by ai2html v0.111.0 - 2022-07-10 18:26 -->
+<!-- ai file: YIa0r-steady-increase-in-milk-production-in-india-rgb.ai -->
+<style media="screen,print">
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box ,
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box p {
+		margin:0;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box .g-aiPointText p { white-space: nowrap; }
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 .g-pstyle1 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(162,162,162);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 .g-pstyle2 {
+		height:17px;
+		text-align:center;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 .g-pstyle3 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(116,116,116);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 .g-pstyle4 {
+		line-height:13px;
+		height:13px;
+		font-size:11px;
+		color:rgb(136,136,136);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1 .g-cstyle0 {
+		font-weight:bold;
+		color:rgb(82,94,117);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 .g-pstyle0 {
+		font-weight:bold;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 .g-pstyle1 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(162,162,162);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 .g-pstyle2 {
+		height:17px;
+		text-align:center;
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 .g-pstyle3 {
+		line-height:14px;
+		height:14px;
+		letter-spacing:-0.008em;
+		font-size:12px;
+		color:rgb(162,162,162);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 .g-pstyle4 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+		color:rgb(116,116,116);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 .g-pstyle5 {
+		line-height:13px;
+		height:13px;
+		font-size:11px;
+		color:rgb(136,136,136);
+	}
+	#g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2 .g-cstyle0 {
+		font-weight:bold;
+		color:rgb(82,94,117);
+	}
+
+</style>
+
+<div id="g-YIa0r-steady-increase-in-milk-production-in-india-rgb-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1" class="g-artboard" style="min-width: 600px;" data-aspect-ratio="1.299" data-min-width="600">
+<div style="padding: 0 0 77% 0;"></div>
+		<img id="g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1-img" class="g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1-img g-aiImg" alt="" src="charts/YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:3.5883%;margin-top:-15.6px;left:0%;width:469px;">
+			<p class="g-pstyle0">Steady Increase In Milk Production In India</p>
+		</div>
+		<div id="g-ai0-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:10.6271%;margin-top:-8.1px;left:0.5%;width:119px;">
+			<p class="g-pstyle1">200 million tonnes</p>
+		</div>
+		<div id="g-ai0-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:29.1298%;margin-top:-26.6px;left:62.5422%;margin-left:-92.5px;width:185px;">
+			<p class="g-pstyle2">Milk production increased </p>
+			<p class="g-pstyle2">by<span class="g-cstyle0"> 18.3%</span> in the</p>
+			<p class="g-pstyle2"> same time frame</p>
+		</div>
+		<div id="g-ai0-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:25.5622%;margin-top:-8.1px;left:0%;width:42px;">
+			<p class="g-pstyle1">160</p>
+		</div>
+		<div id="g-ai0-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:40.4972%;margin-top:-8.1px;left:0%;width:42px;">
+			<p class="g-pstyle1">120</p>
+		</div>
+		<div id="g-ai0-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:55.4323%;margin-top:-8.1px;left:0%;width:35px;">
+			<p class="g-pstyle1">80</p>
+		</div>
+		<div id="g-ai0-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:70.5838%;margin-top:-8.1px;left:0%;width:35px;">
+			<p class="g-pstyle1">40</p>
+		</div>
+		<div id="g-ai0-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:4.6634%;width:66px;">
+			<p class="g-pstyle3">1950-51</p>
+		</div>
+		<div id="g-ai0-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:16.619%;width:66px;">
+			<p class="g-pstyle3">1980-81</p>
+		</div>
+		<div id="g-ai0-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:28.5745%;width:66px;">
+			<p class="g-pstyle3">1986-87</p>
+		</div>
+		<div id="g-ai0-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:40.5301%;width:66px;">
+			<p class="g-pstyle3">1992-93</p>
+		</div>
+		<div id="g-ai0-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:52.4857%;width:66px;">
+			<p class="g-pstyle3">1998-99</p>
+		</div>
+		<div id="g-ai0-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:64.4412%;width:66px;">
+			<p class="g-pstyle3">2004-05</p>
+		</div>
+		<div id="g-ai0-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:76.471%;width:65px;">
+			<p class="g-pstyle3">2010-11</p>
+		</div>
+		<div id="g-ai0-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2808%;margin-top:-8.1px;left:88.3524%;width:66px;">
+			<p class="g-pstyle3">2016-17</p>
+		</div>
+		<div id="g-ai0-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:95.564%;margin-top:-7.5px;left:-0.0843%;width:290px;">
+			<p class="g-pstyle4">Source: Department of Animal Husbandry and Dairying</p>
+		</div>
+		<div id="g-ai0-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.4298%;margin-top:-7.5px;left:44.6338%;width:25px;">
+			<p class="g-pstyle4">​ ​</p>
+		</div>
+		<div id="g-ai0-18" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.4298%;margin-top:-7.5px;left:56.5863%;width:25px;">
+			<p class="g-pstyle4">​ ​</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_2 -->
+	<div id="g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2" class="g-artboard" style="max-width: 599px;max-height: 756px" data-aspect-ratio="0.792" data-min-width="0" data-max-width="599">
+<div style="padding: 0 0 126.2499% 0;"></div>
+		<img id="g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2-img" class="g-YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2-img g-aiImg" alt="" src="charts/YIa0r-steady-increase-in-milk-production-in-india-rgb-Artboard_2.png"/>
+		<div id="g-ai1-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:5.8251%;margin-top:-15.6px;left:-0.2052%;width:392px;">
+			<p class="g-pstyle0">Steady Increase In Milk Production </p>
+		</div>
+		<div id="g-ai1-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:13.9611%;margin-top:-8.1px;left:2.212%;width:119px;">
+			<p class="g-pstyle1">200 million tonnes</p>
+		</div>
+		<div id="g-ai1-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:32.0168%;margin-top:-26.6px;left:54.1379%;margin-left:-92.5px;width:185px;">
+			<p class="g-pstyle2">Milk production increased </p>
+			<p class="g-pstyle2">by<span class="g-cstyle0"> 18.3%</span> in the</p>
+			<p class="g-pstyle2"> same time frame</p>
+		</div>
+		<div id="g-ai1-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:28.5354%;margin-top:-8.1px;left:2.212%;width:42px;">
+			<p class="g-pstyle3">160</p>
+		</div>
+		<div id="g-ai1-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:43.3209%;margin-top:-8.1px;left:2.212%;width:42px;">
+			<p class="g-pstyle1">120</p>
+		</div>
+		<div id="g-ai1-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:57.8952%;margin-top:-8.1px;left:2.212%;width:35px;">
+			<p class="g-pstyle1">80</p>
+		</div>
+		<div id="g-ai1-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:72.4694%;margin-top:-8.1px;left:2.212%;width:35px;">
+			<p class="g-pstyle1">40</p>
+		</div>
+		<div id="g-ai1-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:6.5661%;width:59px;">
+			<p class="g-pstyle4">1950-51</p>
+		</div>
+		<div id="g-ai1-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:17.7288%;width:59px;">
+			<p class="g-pstyle4">1980-81</p>
+		</div>
+		<div id="g-ai1-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:28.8914%;width:59px;">
+			<p class="g-pstyle4">1986-87</p>
+		</div>
+		<div id="g-ai1-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:40.054%;width:59px;">
+			<p class="g-pstyle4">1992-93</p>
+		</div>
+		<div id="g-ai1-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:51.2165%;width:59px;">
+			<p class="g-pstyle4">1998-99</p>
+		</div>
+		<div id="g-ai1-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:62.3792%;width:59px;">
+			<p class="g-pstyle4">2004-05</p>
+		</div>
+		<div id="g-ai1-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:73.6111%;width:58px;">
+			<p class="g-pstyle4">2010-11</p>
+		</div>
+		<div id="g-ai1-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8632%;margin-top:-6.9px;left:84.7044%;width:59px;">
+			<p class="g-pstyle4">2016-17</p>
+		</div>
+		<div id="g-ai1-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.8462%;margin-top:-7.5px;left:2.1333%;width:290px;">
+			<p class="g-pstyle5">Source: Department of Animal Husbandry and Dairying</p>
+		</div>
+		<div id="g-ai1-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:97.6911%;margin-top:-7.5px;left:43.8854%;width:24px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+		<div id="g-ai1-18" class="g-exportSvg g-aiAbs g-aiPointText" style="top:97.6911%;margin-top:-7.5px;left:55.0452%;width:24px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2022-07-10 18:26 -->
+
+                    </div>
+
+                <p>
+                    Now this does not necessarily mean that beef exports are not linked to the dairy industry as milk production can depend on a multitude of factors, including the change in the species of cattle or buffalo and their yields. Since that doesn’t completely answer the question, I thought maybe the key to solving the puzzle lies in the fact that India only exports buffalo meat. So I tried analysing <a href="https://dahd.nic.in/animal-husbandry-statistics">data</a> from the Livestock Census to see if a higher proportion of buffaloes are used in milk production.
+                </p>
+            
+                <iframe title="Most Of The Animals Used In Milk Production Are Cattle" aria-label="Stacked Bars" id="datawrapper-chart-9EcKL" src="https://datawrapper.dwcdn.net/9EcKL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="143"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                </script>
+
+                <p>
+                    Now, the data shows that of the total number of cattle and buffaloes in India, 64% are cattle and among animals used in milk production, 84% are cows. But, this data does not really say much as the issue of yield persists. This is where I decided to draw the line. Sometimes, data is not always the best way to answer questions. Because it is a well known fact that there is no culture of rearing animals for slaughtering in India and that the beef that is exported is meat from male and spent female animals.
+
+                </p>
+                
+                <p>
+                
+                To give my friend credit where it is due, they were right about the fact that the beef exports industry is linked to the dairy industry. And there is <a href="https://animalequality.in/india-deadly-dairy/">cruelty</a> associated with it. But this is only one part of the story. This narrative fails to acknowledge the socio-economic and political reality associated with the dairy and beef industry.
+                </p> 
+
+                <p>
+                
+                The dairy industry in India, unlike in other countries, is <a href="https://dahd.nic.in/sites/default/filess/Annual%20Report%20English.pdf">majorly driven</a> by small and marginal farmers who own little land. As the data from a national sample survey show, most dairy animals are owned by farmers who own very little land.
+
+                </p> 
+
+                <iframe title="Most Dairy Animals Are Owned By Small And Marginal Farmers" aria-label="Stacked Bars" id="datawrapper-chart-NDCg2" src="https://datawrapper.dwcdn.net/NDCg2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="171"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                </script>
+
+                <p>
+                Livestock farming is an occupation for a larger proportion of landless and marginal farmers and it forms a larger chunk of their farm incomes.
+                </p> 
+
+                <div>
+                  
+<!-- Generated by ai2html v0.111.0 - 2022-07-10 18:50 -->
+<!-- ai file: vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb.svg -->
+<style media="screen,print">
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box ,
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box p {
+		margin:0;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box .g-aiPointText p { white-space: nowrap; }
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:13px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:11px;
+		text-align:left;
+		color:rgb(136,136,136);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+		color:rgb(0,0,0);
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1 .g-pstyle1 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(0,0,0);
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1 .g-pstyle2 {
+		height:13px;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:13px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:11px;
+		text-align:left;
+		color:rgb(136,136,136);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2 .g-pstyle0 {
+		font-weight:bold;
+		line-height:25px;
+		height:25px;
+		font-size:21px;
+		color:rgb(0,0,0);
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2 .g-pstyle1 {
+		height:13px;
+	}
+	#g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2 .g-pstyle2 {
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+		color:rgb(0,0,0);
+	}
+
+</style>
+
+<div id="g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1" class="g-artboard" style="min-width: 600px;" data-aspect-ratio="1.58" data-min-width="600">
+<div style="padding: 0 0 63.3058% 0;"></div>
+		<img id="g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1-img" class="g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1-img g-aiImg" alt="" src="charts/vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:11.3149%;margin-top:-42px;left:0%;width:548px;">
+			<p class="g-pstyle0">Higher Proportion Of Marginal Farmers Engage In </p>
+			<p class="g-pstyle0">Livestock Farming</p>
+		</div>
+		<div id="g-ai0-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:20.8241%;margin-top:-8.1px;left:2.9505%;width:111px;">
+			<p class="g-pstyle1">livestock farming</p>
+		</div>
+		<div id="g-ai0-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:20.8241%;margin-top:-8.1px;left:34.2591%;width:105px;">
+			<p class="g-pstyle1">crop production</p>
+		</div>
+		<div id="g-ai0-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:20.8241%;margin-top:-8.1px;left:64.4635%;width:55px;">
+			<p class="g-pstyle1">others</p>
+		</div>
+		<div id="g-ai0-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:30.7691%;margin-top:-7.9px;left:5.196%;width:51px;">
+			<p class="g-pstyle1"><0.01</p>
+		</div>
+		<div id="g-ai0-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:38.6673%;margin-top:-7.9px;left:1.9132%;width:71px;">
+			<p class="g-pstyle1">0.01-0.40</p>
+		</div>
+		<div id="g-ai0-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:46.5654%;margin-top:-7.9px;left:1.9132%;width:71px;">
+			<p class="g-pstyle1">0.40-1.00</p>
+		</div>
+		<div id="g-ai0-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:54.4636%;margin-top:-7.9px;left:1.9132%;width:71px;">
+			<p class="g-pstyle1">1.01-2.00</p>
+		</div>
+		<div id="g-ai0-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:62.3618%;margin-top:-7.9px;left:1.9132%;width:71px;">
+			<p class="g-pstyle1">2.01-4.00</p>
+		</div>
+		<div id="g-ai0-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:70.2599%;margin-top:-7.9px;left:0.8362%;width:78px;">
+			<p class="g-pstyle1">4.01-10.00</p>
+		</div>
+		<div id="g-ai0-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:78.1581%;margin-top:-7.9px;left:4.1191%;width:58px;">
+			<p class="g-pstyle1">10.00+</p>
+		</div>
+		<div id="g-ai0-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.9095%;margin-top:-27.3px;left:0.0824%;width:541px;">
+			<p class="g-pstyle2">Source: Situation Assessment of Agricultural Households and Land and Livestock Holdings of Households </p>
+			<p class="g-pstyle2">in Rural India, 2019</p>
+			<p>&nbsp;</p>
+			<p class="g-pstyle2">Note: The labels for each bar are land sizes in hectare</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_2 -->
+	<div id="g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2" class="g-artboard" style="max-width: 599px;max-height: 746px" data-aspect-ratio="0.803" data-min-width="0" data-max-width="599">
+<div style="padding: 0 0 124.5198% 0;"></div>
+		<img id="g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2-img" class="g-vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2-img g-aiImg" alt="" src="charts/vNlJQ-higher-proportion-of-marginal-farmers-engage-in-livestock-farming-rgb_svg-Artboard_2.png"/>
+		<div id="g-ai1-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:12.1765%;margin-top:-40.2px;left:0.1238%;width:370px;">
+			<p class="g-pstyle0">Bigger Chunk Of Marginal Farmers</p>
+			<p class="g-pstyle0">Engage In Livestock Farming</p>
+		</div>
+		<div id="g-ai1-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:5.4333%;margin-top:-7.5px;left:6.4909%;width:25px;">
+			<p class="g-pstyle1">​ ​</p>
+		</div>
+		<div id="g-ai1-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:5.4333%;margin-top:-7.5px;left:8.3231%;width:25px;">
+			<p class="g-pstyle1">​ ​</p>
+		</div>
+		<div id="g-ai1-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:5.4333%;margin-top:-7.5px;left:25.5134%;width:25px;">
+			<p class="g-pstyle1">​ ​</p>
+		</div>
+		<div id="g-ai1-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:20.0446%;margin-top:-8.1px;left:5.9177%;width:111px;">
+			<p class="g-pstyle2">livestock farming</p>
+		</div>
+		<div id="g-ai1-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:20.0446%;margin-top:-8.1px;left:35.256%;width:105px;">
+			<p class="g-pstyle2">crop production</p>
+		</div>
+		<div id="g-ai1-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:20.0446%;margin-top:-8.1px;left:65.1626%;width:55px;">
+			<p class="g-pstyle2">others</p>
+		</div>
+		<div id="g-ai1-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:29.7954%;margin-top:-7.9px;left:4.3958%;width:51px;">
+			<p class="g-pstyle2"><0.01</p>
+		</div>
+		<div id="g-ai1-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:36.8251%;margin-top:-7.9px;left:1.4104%;width:71px;">
+			<p class="g-pstyle2">0.01-0.40</p>
+		</div>
+		<div id="g-ai1-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:44.9199%;margin-top:-7.9px;left:1.4104%;width:71px;">
+			<p class="g-pstyle2">0.40-1.00</p>
+		</div>
+		<div id="g-ai1-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:53.0146%;margin-top:-7.9px;left:1.4104%;width:71px;">
+			<p class="g-pstyle2">1.01-2.00</p>
+		</div>
+		<div id="g-ai1-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:61.3224%;margin-top:-7.9px;left:1.4104%;width:71px;">
+			<p class="g-pstyle2">2.01-4.00</p>
+		</div>
+		<div id="g-ai1-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:70.0562%;margin-top:-7.9px;left:0.6093%;width:78px;">
+			<p class="g-pstyle2">4.01-10.00</p>
+		</div>
+		<div id="g-ai1-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:77.9379%;margin-top:-7.9px;left:3.5946%;width:58px;">
+			<p class="g-pstyle2">10.00+</p>
+		</div>
+		<div id="g-ai1-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:91.8767%;margin-top:-27.3px;left:-0.1342%;width:372px;">
+			<p class="g-pstyle1">Source: Situation Assessment of Agricultural Households and Land and </p>
+			<p class="g-pstyle1">Livestock Holdings of Households in Rural India, 2019</p>
+			<p>&nbsp;</p>
+			<p class="g-pstyle1">Note: The labels for each bar are land sizes in hectare</p>
+		</div>
+		<div id="g-ai1-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2152%;margin-top:-7.5px;left:5.3729%;width:24px;">
+			<p class="g-pstyle1">​ ​</p>
+		</div>
+		<div id="g-ai1-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2152%;margin-top:-7.5px;left:6.5127%;width:24px;">
+			<p class="g-pstyle1">​ ​</p>
+		</div>
+		<div id="g-ai1-18" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2152%;margin-top:-7.5px;left:17.2074%;width:24px;">
+			<p class="g-pstyle1">​ ​</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2022-07-10 18:50 -->
+
+                    </div>
+
+                    <iframe title="For Marginal Farmers, A Larger Chunk Of Farm Income Comes From Livestock Farming" aria-label="Stacked Bars" id="datawrapper-chart-iSGyo" src="https://datawrapper.dwcdn.net/iSGyo/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="402"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                    </script>
+
+                <p>  
+                This economic perspective becomes important in understanding the linkages between the dairy industry and beef exports because economic factors push the selling of animals. As a farmer told a Business Standard reporter, “It (dry or non-milch buffalo) is like an old scooter for us. We either sell it at some profit or just let it go at scrap value. In these testing times, when fodder prices and labour costs are rising, who wouldn’t want good price for an animal that does not have any economic significance for the farmer.”
+                </p>  
+
+                <p>  
+                
+                For many poor and marginalised families, livestock also becomes a <a href="https://www3.weforum.org/docs/White_Paper_Livestock_Emerging%20Economies.pdf">prime asset</a>, acting as a financial cushion and helping them manage risks. In addition to these economic factors, there are social and political factors. And the fact that we are only speaking of beef exports and not beef consumption highlights the discrimination and taboo associated with the issue.
+
+                </p>  
+
+                <p>  
+                 Now that we are talking about meat consumption in India, let's tackle the misconception that India is a vegetarian country. It amuses me that many people, like my friend, still believe that. But it is not their fault. If the <a href="https://www.worldbank.org/en/news/press-release/2012/03/15/us-352-million-for-national-dairy-support-project-india--17-million-rural-milk-producing-households-to-benefit-directly">World Bank</a> can think so, then why not them. But such is the spread of this misconception. Government studies put the proportion of vegetarians in India between 23 and 37%, which researchers <a href="https://www.bbc.com/news/world-asia-india-43581122">contest</a> to be exaggerated estimates.
+
+                </p>  
+                <p>
+                
+                And caste and religion form the basis of this vegetarianism myth. Only upper caste Hindus, who form a small section of the Indian population primarily follow a vegetarian diet. In addition to Muslims and Christians, Dalits, formerly termed untouchables and Adivasis or tribal people mainly consume meat. And the caste system and its discriminatory hierarchical structure has links to cow slaughter and beef consumption. BR Ambedkar in 1948 had <a href="https://scroll.in/article/759157/a-short-account-of-indias-long-history-of-hypocrisy-on-cow-slaughter-laws">linked</a> the status of Untouchables to their eating the meat of the dead cow in The Untouchable and Why They Became Untouchables?
+
+                </p>
+
+                <p>
+                This context becomes increasingly important given the recent surge in anti-cow slaughter laws, orders and incidents of lynching based on suspicion of transporting cow meat. In 2014, when the current Prime Minister Narendra Modi was contesting for the elections, he had promised to curb the beef exports industry. And since the landslide victory of the BJP that year, multiple states have passed anti-cow slaughter laws and issued revised orders that make it a more grave offence.
+                </p>
+            
+                <p>
+                
+                 In 2015, Maharashtra and Haryana passed laws banning anti-cow slaughter, beef consumption and selling laws. In May 2017, the environment ministry issued a notification banning sale and purchase of cattle from animal markets for slaughter, only for it to be <a href="https://www.bbc.com/news/world-asia-india-40565457">suspended</a> by the Supreme Court later that year. And the same year, Gujarat <a href="https://timesofindia.indiatimes.com/city/ahmedabad/cow-slaughter-now-punishable-with-life-term-in-gujarat-rules-notified/articleshow/58980619.cms">passed</a> a new law increasing the punishment for cow slaughter to life imprisonment.
+
+                </p>
+
+                <p>
+                All these laws coupled with an increase in lynchings and attacks by self proclaimed cow protection groups has <a href="https://www.hrw.org/report/2019/02/18/violent-cow-protection-india/vigilante-groups-attack-minorities">led to a decrease</a> in beef exports in India, impacting the lifes and livelihoods of thousands.
+                </p>
+
+                <div>
+
+<!-- Generated by ai2html v0.111.0 - 2022-07-10 23:50 -->
+<!-- ai file: sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb.svg -->
+<style media="screen,print">
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box ,
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box p {
+		margin:0;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box .g-aiPointText p { white-space: nowrap; }
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:14px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:12px;
+		text-align:left;
+		color:rgb(94,94,94);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+		color:rgb(0,0,0);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 .g-pstyle1 {
+		height:14px;
+		color:rgb(162,162,162);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 .g-pstyle2 {
+		height:14px;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 .g-pstyle3 {
+		height:14px;
+		color:rgb(73,73,73);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 .g-pstyle4 {
+		height:14px;
+		color:rgb(116,116,116);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1 .g-pstyle5 {
+		line-height:13px;
+		height:13px;
+		font-size:11px;
+		color:rgb(136,136,136);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:14px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:12px;
+		text-align:left;
+		color:rgb(94,94,94);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 .g-pstyle0 {
+		font-weight:bold;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+		color:rgb(0,0,0);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 .g-pstyle1 {
+		height:14px;
+		color:rgb(162,162,162);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 .g-pstyle2 {
+		height:14px;
+		text-align:center;
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 .g-pstyle3 {
+		height:14px;
+		text-align:center;
+		color:rgb(73,73,73);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 .g-pstyle4 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+		color:rgb(116,116,116);
+	}
+	#g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2 .g-pstyle5 {
+		line-height:13px;
+		height:13px;
+		font-size:11px;
+		color:rgb(136,136,136);
+	}
+
+</style>
+
+<div id="g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1" class="g-artboard" style="min-width: 600px;" data-aspect-ratio="1.326" data-min-width="600">
+<div style="padding: 0 0 75.4167% 0;"></div>
+		<img id="g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1-img" class="g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1-img g-aiImg" alt="" src="charts/sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:4.3267%;margin-top:-15.6px;left:0%;width:601px;">
+			<p class="g-pstyle0">Impact Of Anti-Cow Slaughter Policies On Beef Exports</p>
+		</div>
+		<div id="g-ai0-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:9.7452%;margin-top:-8.1px;left:1.1696%;width:129px;">
+			<p class="g-pstyle1">1.6 Billion kilograms</p>
+		</div>
+		<div id="g-ai0-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:18.806%;margin-top:-8.1px;left:76.1624%;width:153px;">
+			<p class="g-pstyle2">Karnataka revises its act</p>
+		</div>
+		<div id="g-ai0-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:28.9717%;margin-top:-8.1px;left:38.0883%;width:116px;">
+			<p class="g-pstyle2">BJP wins national</p>
+		</div>
+		<div id="g-ai0-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:29.1927%;margin-top:-8.1px;left:1.1696%;width:47px;">
+			<p class="g-pstyle1">1.2B</p>
+		</div>
+		<div id="g-ai0-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:32.2867%;margin-top:-8.1px;left:42.0165%;width:69px;">
+			<p class="g-pstyle2">elections</p>
+		</div>
+		<div id="g-ai0-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:39.5795%;margin-top:-8.1px;left:58.388%;width:134px;">
+			<p class="g-pstyle2">Environment Ministry</p>
+		</div>
+		<div id="g-ai0-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:42.6734%;margin-top:-8.1px;left:59.8309%;width:117px;">
+			<p class="g-pstyle2">issues notification</p>
+		</div>
+		<div id="g-ai0-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:45.7673%;margin-top:-8.1px;left:60.1063%;width:113px;">
+			<p class="g-pstyle2">banning sale and</p>
+		</div>
+		<div id="g-ai0-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:48.8613%;margin-top:-8.1px;left:0.2809%;width:52px;">
+			<p class="g-pstyle1">800M</p>
+		</div>
+		<div id="g-ai0-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:49.0822%;margin-top:-8.1px;left:59.8304%;width:117px;">
+			<p class="g-pstyle2">purchase of cattle</p>
+		</div>
+		<div id="g-ai0-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:62.1209%;margin-top:-8.1px;left:46.6626%;width:113px;">
+			<p class="g-pstyle2">Maharashtra and</p>
+		</div>
+		<div id="g-ai0-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:65.2148%;margin-top:-8.1px;left:45.7744%;width:123px;">
+			<p class="g-pstyle2">Haryana pass laws</p>
+		</div>
+		<div id="g-ai0-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:68.5298%;margin-top:-8.1px;left:0.2809%;width:52px;">
+			<p class="g-pstyle1">400M</p>
+		</div>
+		<div id="g-ai0-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:81.1264%;margin-top:-8.1px;left:72.0142%;width:147px;">
+			<p class="g-pstyle3">UP clears an ordinance</p>
+		</div>
+		<div id="g-ai0-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:92.6182%;margin-top:-8.1px;left:4.1139%;width:66px;">
+			<p class="g-pstyle4">2009-10</p>
+		</div>
+		<div id="g-ai0-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:92.6182%;margin-top:-8.1px;left:18.8873%;width:65px;">
+			<p class="g-pstyle4">2011-12</p>
+		</div>
+		<div id="g-ai0-18" class="g-exportSvg g-aiAbs g-aiPointText" style="top:92.6182%;margin-top:-8.1px;left:33.5123%;width:66px;">
+			<p class="g-pstyle4">2013-14</p>
+		</div>
+		<div id="g-ai0-19" class="g-exportSvg g-aiAbs g-aiPointText" style="top:92.6182%;margin-top:-8.1px;left:48.2114%;width:66px;">
+			<p class="g-pstyle4">2015-16</p>
+		</div>
+		<div id="g-ai0-20" class="g-exportSvg g-aiAbs g-aiPointText" style="top:92.6182%;margin-top:-8.1px;left:62.9106%;width:66px;">
+			<p class="g-pstyle4">2017-18</p>
+		</div>
+		<div id="g-ai0-21" class="g-exportSvg g-aiAbs g-aiPointText" style="top:92.6182%;margin-top:-8.1px;left:77.6097%;width:66px;">
+			<p class="g-pstyle4">2019-20</p>
+		</div>
+		<div id="g-ai0-22" class="g-exportSvg g-aiAbs g-aiPointText" style="top:92.6182%;margin-top:-8.1px;left:92.3089%;width:66px;">
+			<p class="g-pstyle4">2021-22</p>
+		</div>
+		<div id="g-ai0-23" class="g-exportSvg g-aiAbs g-aiPointText" style="top:97.7914%;margin-top:-7.5px;left:-0.0843%;width:417px;">
+			<p class="g-pstyle5">Source: Agricultural and Processed Food Products Export Development Authority</p>
+		</div>
+		<div id="g-ai0-24" class="g-exportSvg g-aiAbs g-aiPointText" style="top:98.4543%;margin-top:-7.5px;left:65.932%;width:25px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+		<div id="g-ai0-25" class="g-exportSvg g-aiAbs g-aiPointText" style="top:98.4543%;margin-top:-7.5px;left:67.0832%;width:25px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+		<div id="g-ai0-26" class="g-exportSvg g-aiAbs g-aiPointText" style="top:98.4543%;margin-top:-7.5px;left:77.8844%;width:25px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_2 -->
+	<div id="g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2" class="g-artboard" style="max-width: 599px;max-height: 781px" data-aspect-ratio="0.767" data-min-width="0" data-max-width="599">
+<div style="padding: 0 0 130.3436% 0;"></div>
+		<img id="g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2-img" class="g-sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2-img g-aiImg" alt="" src="charts/sn6if-impact-of-anti-cow-slaughter-policies-on-beef-exports-rgb_svg-Artboard_2.png"/>
+		<div id="g-ai1-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:6.2801%;margin-top:-28.8px;left:-0.1434%;width:339px;">
+			<p class="g-pstyle0">Impact Of Anti-Cow Slaughter </p>
+			<p class="g-pstyle0">Policies On Beef Exports</p>
+		</div>
+		<div id="g-ai1-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:13.6907%;margin-top:-8.1px;left:0%;width:129px;">
+			<p class="g-pstyle1">1.6 Billion kilograms</p>
+		</div>
+		<div id="g-ai1-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:31.8506%;margin-top:-8.1px;left:0%;width:47px;">
+			<p class="g-pstyle1">1.2B</p>
+		</div>
+		<div id="g-ai1-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:33.9319%;margin-top:-15.3px;left:47.6226%;margin-left:-57.5px;width:115px;">
+			<p class="g-pstyle2">BJP wins </p>
+			<p class="g-pstyle2">national elections</p>
+		</div>
+		<div id="g-ai1-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:48.2149%;margin-top:-15.3px;left:68.9835%;margin-left:-68.5px;width:137px;">
+			<p class="g-pstyle2">Environment Ministry </p>
+			<p class="g-pstyle2">issues notification</p>
+		</div>
+		<div id="g-ai1-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:49.8064%;margin-top:-8.1px;left:-0.1308%;width:52px;">
+			<p class="g-pstyle1">800M</p>
+		</div>
+		<div id="g-ai1-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:65.7626%;margin-top:-15.3px;left:54.0383%;margin-left:-76.5px;width:153px;">
+			<p class="g-pstyle2">Maharashtra & Haryana </p>
+			<p class="g-pstyle2">pass laws</p>
+		</div>
+		<div id="g-ai1-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:67.9662%;margin-top:-8.1px;left:0%;width:52px;">
+			<p class="g-pstyle1">400M</p>
+		</div>
+		<div id="g-ai1-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:81.0659%;margin-top:-15.3px;left:83.4822%;margin-left:-47px;width:94px;">
+			<p class="g-pstyle3">UP clears an </p>
+			<p class="g-pstyle3">ordinance</p>
+		</div>
+		<div id="g-ai1-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.1697%;margin-top:-6.9px;left:4.6004%;width:59px;">
+			<p class="g-pstyle4">2009-10</p>
+		</div>
+		<div id="g-ai1-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.1697%;margin-top:-6.9px;left:33.0578%;width:59px;">
+			<p class="g-pstyle4">2013-14</p>
+		</div>
+		<div id="g-ai1-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.1697%;margin-top:-6.9px;left:62.0474%;width:59px;">
+			<p class="g-pstyle4">2017-18</p>
+		</div>
+		<div id="g-ai1-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.1697%;margin-top:-6.9px;left:89.175%;width:59px;">
+			<p class="g-pstyle4">2021-22</p>
+		</div>
+		<div id="g-ai1-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:93.351%;margin-top:-7.5px;left:65.7701%;width:24px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+		<div id="g-ai1-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:93.351%;margin-top:-7.5px;left:66.884%;width:24px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+		<div id="g-ai1-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:93.351%;margin-top:-7.5px;left:77.3397%;width:24px;">
+			<p class="g-pstyle5">​ ​</p>
+		</div>
+		<div id="g-ai1-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.1259%;margin-top:-14.1px;left:-0.1434%;width:374px;">
+			<p class="g-pstyle5">Source: Agricultural and Processed Food Products Export Development </p>
+			<p class="g-pstyle5">Authority</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2022-07-10 23:50 -->
+
+                </div>
+
+                <p>
+                The impact of these policies and the impunity with which these attacks are conducted is <a href="https://www.downtoearth.org.in/news/agriculture/how-india-is-killing-the-country-s-largest-economy-of-the-poor-57964">faced by</a> the <a href="https://theprint.in/india/were-finished-farmers-traders-say-karnataka-cattle-slaughter-law-brought-year-of-misery/796924/">poorest and the most marginalised communities</a> in India. The anti-cow slaughter laws in India vary across states and are <a href="https://article-14.com/post/the-dark-chronology-of-india-s-cow-slaughter-laws">confusing</a>. And these laws are also being misused. In 2020, the Allahabad High Court <a href="https://indianexpress.com/article/india/up-cow-slaughter-law-is-being-misused-against-innocent-allahabad-hc-6889785/">expressed</a> concern over the misuse of the cow protection law in Uttar Pradesh. “Whenever any meat is recovered, it is normally shown as cow meat (beef) without getting it examined or analysed by the Forensic Laboratory,” said the court order, “Accused persons continue in jail for an offence that may not have been committed at all and which is triable by Magistrate Ist Class, having maximum sentence up to 7 years.”
+                </p>
+
+                <p>
+                
+                And these laws and their improper implementation becomes increasingly important because the data shows that states with these strict laws are major exporters of beef from India.
+
+                </p>
+
+                <div>
+                    <!-- Generated by ai2html v0.111.0 - 2022-07-11 00:01 -->
+                    <!-- ai file: iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb.svg -->
+                    <style media="screen,print">
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box ,
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box .g-artboard {
+                            margin:0 auto;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box p {
+                            margin:0;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box .g-aiAbs {
+                            position:absolute;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box .g-aiImg {
+                            position:absolute;
+                            top:0;
+                            display:block;
+                            width:100% !important;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box .g-aiSymbol {
+                            position: absolute;
+                            box-sizing: border-box;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box .g-aiPointText p { white-space: nowrap; }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 {
+                            position:relative;
+                            overflow:hidden;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 p {
+                            font-family:arial,helvetica,sans-serif;
+                            line-height:13px;
+                            height:auto;
+                            opacity:1;
+                            letter-spacing:0em;
+                            font-size:11px;
+                            text-align:left;
+                            color:rgb(136,136,136);
+                            text-transform:none;
+                            padding-bottom:0;
+                            padding-top:0;
+                            mix-blend-mode:normal;
+                            font-style:normal;
+                            position:static;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle0 {
+                            font-weight:bold;
+                            line-height:26px;
+                            height:26px;
+                            font-size:22px;
+                            color:rgb(0,0,0);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle1 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(82,94,117);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle2 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(162,162,162);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle3 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(128,168,128);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle4 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(175,155,109);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle5 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(124,166,167);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle6 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(116,116,116);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1 .g-pstyle7 {
+                            height:13px;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 {
+                            position:relative;
+                            overflow:hidden;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 p {
+                            font-family:arial,helvetica,sans-serif;
+                            line-height:13px;
+                            height:auto;
+                            opacity:1;
+                            letter-spacing:0em;
+                            font-size:11px;
+                            text-align:left;
+                            color:rgb(136,136,136);
+                            text-transform:none;
+                            padding-bottom:0;
+                            padding-top:0;
+                            mix-blend-mode:normal;
+                            font-style:normal;
+                            position:static;
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle0 {
+                            font-weight:bold;
+                            line-height:25px;
+                            height:25px;
+                            font-size:21px;
+                            color:rgb(0,0,0);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle1 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(82,94,117);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle2 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(162,162,162);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle3 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(128,168,128);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle4 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(175,155,109);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle5 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(124,166,167);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle6 {
+                            line-height:14px;
+                            height:14px;
+                            font-size:12px;
+                            color:rgb(116,116,116);
+                        }
+                        #g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2 .g-pstyle7 {
+                            height:13px;
+                        }
+                    
+                    </style>
+                    
+                    <div id="g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-box" class="ai2html">
+                    
+                        <!-- Artboard: Artboard_1 -->
+                        <div id="g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1" class="g-artboard" style="min-width: 600px;" data-aspect-ratio="1.5" data-min-width="600">
+                    <div style="padding: 0 0 66.6667% 0;"></div>
+                            <img id="g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1-img" class="g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1-img g-aiImg" alt="" src="charts/iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_1.png"/>
+                            <div id="g-ai0-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:7.4446%;margin-top:-28.8px;left:0%;width:586px;">
+                                <p class="g-pstyle0">Most Beef In India Is Exported From Maharashtra and </p>
+                                <p class="g-pstyle0">Uttar Pradesh</p>
+                            </div>
+                            <div id="g-ai0-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:23.5243%;margin-top:-8.1px;left:87%;width:48px;">
+                                <p class="g-pstyle1">Uttar</p>
+                            </div>
+                            <div id="g-ai0-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:25.2743%;margin-top:-8.1px;left:0.2809%;width:134px;">
+                                <p class="g-pstyle2">600 Million kilograms</p>
+                            </div>
+                            <div id="g-ai0-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:27.0243%;margin-top:-8.1px;left:87%;width:67px;">
+                                <p class="g-pstyle1">Pradesh</p>
+                            </div>
+                            <div id="g-ai0-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:45.0243%;margin-top:-8.1px;left:0.2809%;width:52px;">
+                                <p class="g-pstyle2">400M</p>
+                            </div>
+                            <div id="g-ai0-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:50.2743%;margin-top:-8.1px;left:87%;width:89px;">
+                                <p class="g-pstyle3">Maharashtra</p>
+                            </div>
+                            <div id="g-ai0-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:65.0243%;margin-top:-8.1px;left:0.2809%;width:52px;">
+                                <p class="g-pstyle2">200M</p>
+                            </div>
+                            <div id="g-ai0-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:73.5243%;margin-top:-8.1px;left:87%;width:67px;">
+                                <p class="g-pstyle4">Haryana</p>
+                            </div>
+                            <div id="g-ai0-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:84.2743%;margin-top:-8.1px;left:86.5%;width:82px;">
+                                <p class="g-pstyle5">Tamil Nadu</p>
+                            </div>
+                            <div id="g-ai0-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2743%;margin-top:-8.1px;left:4.1882%;width:65px;">
+                                <p class="g-pstyle6">2011-12</p>
+                            </div>
+                            <div id="g-ai0-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2743%;margin-top:-8.1px;left:19.6239%;width:66px;">
+                                <p class="g-pstyle6">2013-14</p>
+                            </div>
+                            <div id="g-ai0-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2743%;margin-top:-8.1px;left:35.1337%;width:66px;">
+                                <p class="g-pstyle6">2015-16</p>
+                            </div>
+                            <div id="g-ai0-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2743%;margin-top:-8.1px;left:50.6436%;width:66px;">
+                                <p class="g-pstyle6">2017-18</p>
+                            </div>
+                            <div id="g-ai0-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2743%;margin-top:-8.1px;left:66.1535%;width:66px;">
+                                <p class="g-pstyle6">2019-20</p>
+                            </div>
+                            <div id="g-ai0-15" class="g-exportSvg g-aiAbs g-aiPointText" style="top:90.2743%;margin-top:-8.1px;left:81.6634%;width:66px;">
+                                <p class="g-pstyle6">2021-22</p>
+                            </div>
+                            <div id="g-ai0-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:97.8765%;margin-top:-7.5px;left:-0.0843%;width:417px;">
+                                <p class="g-pstyle7">Source: Agricultural and Processed Food Products Export Development Authority</p>
+                            </div>
+                            <div id="g-ai0-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:98.8765%;margin-top:-7.5px;left:10.2919%;width:25px;">
+                                <p class="g-pstyle7">​ ​</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Artboard: Artboard_2 -->
+                        <div id="g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2" class="g-artboard" style="max-width: 599px;max-height: 705px" data-aspect-ratio="0.85" data-min-width="0" data-max-width="599">
+                    <div style="padding: 0 0 117.712% 0;"></div>
+                            <img id="g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2-img" class="g-iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2-img g-aiImg" alt="" src="charts/iHDEg-most-beef-in-india-is-exported-from-maharashtra-and-uttar-pradesh-rgb_svg-Artboard_2.png"/>
+                            <div id="g-ai1-1" class="g-exportSvg g-aiAbs g-aiPointText" style="top:8.0345%;margin-top:-27.6px;left:0.1353%;width:380px;">
+                                <p class="g-pstyle0">Most Beef In India Is Exported From</p>
+                                <p class="g-pstyle0">Maharashtra and Uttar Pradesh</p>
+                            </div>
+                            <div id="g-ai1-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:25.1012%;margin-top:-8.1px;left:81.9113%;width:48px;">
+                                <p class="g-pstyle1">Uttar</p>
+                            </div>
+                            <div id="g-ai1-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:28.3096%;margin-top:-15.3px;left:0.7948%;width:111px;">
+                                <p class="g-pstyle2">600 </p>
+                                <p class="g-pstyle2">Million kilograms</p>
+                            </div>
+                            <div id="g-ai1-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:28.2643%;margin-top:-8.1px;left:81.9113%;width:67px;">
+                                <p class="g-pstyle1">Pradesh</p>
+                            </div>
+                            <div id="g-ai1-5" class="g-exportSvg g-aiAbs g-aiPointText" style="top:44.5319%;margin-top:-8.1px;left:0.7948%;width:52px;">
+                                <p class="g-pstyle2">400M</p>
+                            </div>
+                            <div id="g-ai1-6" class="g-exportSvg g-aiAbs g-aiPointText" style="top:49.0507%;margin-top:-8.1px;left:81.3793%;width:89px;">
+                                <p class="g-pstyle3">Maharashtra</p>
+                            </div>
+                            <div id="g-ai1-7" class="g-exportSvg g-aiAbs g-aiPointText" style="top:62.3811%;margin-top:-8.1px;left:0.7948%;width:52px;">
+                                <p class="g-pstyle2">200M</p>
+                            </div>
+                            <div id="g-ai1-8" class="g-exportSvg g-aiAbs g-aiPointText" style="top:70.0631%;margin-top:-8.1px;left:81.9113%;width:67px;">
+                                <p class="g-pstyle4">Haryana</p>
+                            </div>
+                            <div id="g-ai1-9" class="g-exportSvg g-aiAbs g-aiPointText" style="top:80.0044%;margin-top:-8.1px;left:81.4438%;width:82px;">
+                                <p class="g-pstyle5">Tamil Nadu</p>
+                            </div>
+                            <div id="g-ai1-10" class="g-exportSvg g-aiAbs g-aiPointText" style="top:85.201%;margin-top:-8.1px;left:4.4497%;width:65px;">
+                                <p class="g-pstyle6">2011-12</p>
+                            </div>
+                            <div id="g-ai1-11" class="g-exportSvg g-aiAbs g-aiPointText" style="top:85.201%;margin-top:-8.1px;left:33.3957%;width:66px;">
+                                <p class="g-pstyle6">2015-16</p>
+                            </div>
+                            <div id="g-ai1-12" class="g-exportSvg g-aiAbs g-aiPointText" style="top:85.201%;margin-top:-8.1px;left:62.4117%;width:66px;">
+                                <p class="g-pstyle6">2019-20</p>
+                            </div>
+                            <div id="g-ai1-13" class="g-exportSvg g-aiAbs g-aiPointText" style="top:94.9183%;margin-top:-14.1px;left:0.3974%;width:306px;">
+                                <p class="g-pstyle7">Source: Agricultural and Processed Food Products Export </p>
+                                <p class="g-pstyle7">Development Authority</p>
+                            </div>
+                            <div id="g-ai1-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:94.3309%;margin-top:-7.5px;left:11.6523%;width:25px;">
+                                <p class="g-pstyle7">​ ​</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- End ai2html - 2022-07-11 00:01 -->
+                    </div>
+
+
+                </div>
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
