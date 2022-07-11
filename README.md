@@ -20,7 +20,7 @@ CSVs of all these data files are in the data folder.
 
 ## Notebooks
 
-I used Pandas for data cleaning and pivoting. The Cows and Beef.ipynb notebook has all details of the analysis.
+I used Pandas for data cleaning and pivoting. The [Cows and Beef.ipynb](https://github.com/ramanshreya/beef-exports-and-dairy-industry-in-india/blob/main/Cows%20and%20Beef.ipynb) notebook has all details of the analysis.
 
 
 
